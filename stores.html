@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/stores.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Cinzel:wght@400;700&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Superbuy stores</title>
+  </head>
+  <body>
+    <span class="load-flash"></span>
+    <div class="nav-bar">
+      <div>
+        <p class="nav-bar-btn">Menu</p>
+        <div class="sub-nav">
+          <div class="padding"><p class="nav-bar-btn close">X</p></div>
+          <div class="nav-middle">
+            <p id="para-sub-nav">Explore</p>
+            <div class="supermarket">
+              <a href="#" class="sub-btn">SuperBuy Supermarket</a>
+              <img
+                class="sub-picture supermarket-img"
+                src="./images/sub-menu-town.jpg"
+              />
+            </div>
+            <div class="south">
+              <a href="#" class="sub-btn">SuperBuy South</a>
+              <img
+                class="sub-picture south-img"
+                src="./images/sub-menu-south.jpg"
+              />
+            </div>
+            <div class="express">
+              <a href="#" class="sub-btn">SuperBuy Express</a>
+              <img
+                class="sub-picture express-img"
+                src="./images/sub-menu-express.jpg"
+              />
+            </div>
+          </div>
+          <div class="socials">
+            <a
+              href="https://www.facebook.com/SuperBuySupermarket/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook-f"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/superbuysupermarket/?hl=en"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stores-out">
+      <div class="superbuy town">
+        <img class="town-main" src="./images/town.jpg" />
+        <a href="#">
+          <img
+            class="town-hover"
+            src="./images/town-color.jpg"
+            onmouseover="applyHover('.town-btn')"
+            onmouseout="removeHover('.town-btn')"
+          />
+        </a>
+      </div>
+      <div class="superbuy south">
+        <img class="south-main" src="./images/south.jpg" />
+        <a href="#">
+          <img
+            class="south-hover"
+            src="./images/south-color.jpg"
+            onmouseover="applyHover('.south-btn')"
+            onmouseout="removeHover('.south-btn')"
+          />
+        </a>
+      </div>
+      <div class="superbuy north">
+        <img class="north-main" src="./images/express.jpg" />
+        <a href="#">
+          <img
+            class="north-hover"
+            src="./images/express-color.jpg"
+            onmouseover="applyHover('.north-btn')"
+            onmouseout="removeHover('.north-btn')"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="nav-bottom">
+      <a
+        href="#"
+        class="nav-btn town-btn"
+        onmouseover="applyHover('.town-hover')"
+        onmouseout="removeHover('.town-hover')"
+        >SuperBuy Supermarket</a
+      >
+      <a
+        href="#"
+        class="nav-btn south-btn"
+        onmouseover="applyHover('.south-hover')"
+        onmouseout="removeHover('.south-hover')"
+        >SuperBuy South</a
+      >
+      <a
+        href="#"
+        class="nav-btn north-btn"
+        onmouseover="applyHover('.north-hover')"
+        onmouseout="removeHover('.north-hover')"
+        >SuperBuy Express</a
+      >
+    </div>
+    <!--mobile-->
+    <div class="nav-bottom-container">
+      <div class="superbuy-store-mobile">
+        <a
+          class="nav-btn town-btn text"
+          onmouseover="applyHover('.town-hover')"
+          onmouseout="removeHover('.town-hover')"
+          >SuperBuy Supermarket</a
+        >
+      </div>
+
+      <div class="superbuy-store-mobile">
+        <a
+          class="nav-btn south-btn text"
+          onmouseover="applyHover('.south-hover')"
+          onmouseout="removeHover('.south-hover')"
+          >SuperBuy South</a
+        >
+      </div>
+
+      <div class="superbuy-store-mobile">
+        <a
+          class="nav-btn north-btn text"
+          onmouseover="applyHover('.north-hover')"
+          onmouseout="removeHover('.north-hover')"
+          >SuperBuy Express</a
+        >
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
